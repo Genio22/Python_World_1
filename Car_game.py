@@ -1,14 +1,14 @@
 
-started =  False
+is_started =  False
+stopped = False
 i = 1
 while True:
-    command = input("> ").lower()
-    
+    command = input("> ").lower() 
     if command == "start":
-        if started:
+        if is_started :
             print('car is already started')
         else:
-            started = True
+            is_started = True
             print('Car is started...Ready to go')
     elif command == 'help':
         if i<3:
@@ -33,11 +33,11 @@ quit - to quit the game
             print('Read the instraction carefully first.')
 
     elif command == 'stop':
-        if started:
-            print('Car is already stopped')
-        else:
-            started = True
+        if  is_started:
             print('Car has stopped.')
+            is_started = False
+        else:  
+            print('Car is already stopped')
     elif command == 'quit':
         print(f'''
 
