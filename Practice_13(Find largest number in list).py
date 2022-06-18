@@ -1,4 +1,5 @@
-list  = [1, 2, 3, 44, 5, 6, 7, 8, 9]
+list  = [int(item) for item in input("Enter the list items : ").split()]  #input(list([list]))#[2,3,555555,67676676,8]
+print(list)
 max = list[0]
 for i in list:
     if i> max:
