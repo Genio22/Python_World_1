@@ -1,0 +1,2 @@
+f = 'Windows ©️👀'
+print(f)
